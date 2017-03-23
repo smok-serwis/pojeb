@@ -54,8 +54,8 @@ Done.
 
 ## Usage
 
-* _dojeb your-package.jeb_ - install a package
-* _wyjeb your-package_ - uninstall a package
+* _sudo dojeb your-package.jeb_ - install a package
+* _sudo wyjeb your-package_ - uninstall a package
 * _przyjeb username@remotehost your-package.jeb_ - install a package on
   a remote machine. If pojeb is not there already, it will be transparently installed
   via the ninja one-liner. **ssh** is 
