@@ -2,10 +2,4 @@
 
 JEBNAME=$(basename $2)
 scp $2 $1:$JEBNAME
-ssh $1 <<ENDSSH
-if [ ! -d "/etc/pojeb" ];
-    wget -O - https://github.com/smok-serwis/pojeb/raw/master/jebac-to | sudo bash
-fi
-sudo pojeb $JEBNAME
-rm -f $JEBNAME
-ENDSSH
+ssh $1 if [ ! -d "/etc/pojeb" ]; wget -O - https://github.com/smok-serwis/pojeb/raw/master/jebac-to | sudo bash; fi; sudo pojeb $JEBNAME; rm -f $JEBNAME
