@@ -1,13 +1,14 @@
 #!/usr/bin/env bash
-cp src/zajeb.py /bin/zajeb
-cp src/przyjeb.sh /bin/przyjeb
-cp src/wyjeb.py /bin/wyjeb
-cp src/dojeb.py /bin/dojeb
 
-mkdir /etc/pojeb
-mkdir /etc/pojeb/wyjeb.d
+sudo cp src/zajeb.py /bin/zajeb
+sudo cp src/przyjeb.sh /bin/przyjeb
+sudo cp src/wyjeb.py /bin/wyjeb
+sudo cp src/dojeb.py /bin/dojeb
 
-chmod ugo+rx /bin/zajeb
-chmod ugo+rx /bin/przyjeb
-chmod ugo+rx /bin/wyjeb
-chmod ugo+rx /bin/dojeb
+sudo mkdir /etc/pojeb
+sudo mkdir /etc/pojeb/wyjeb.d
+
+sudo chmod ugo+rx /bin/zajeb
+sudo chmod ugo+rx /bin/przyjeb
+sudo chmod ugo+rx /bin/wyjeb
+sudo chmod ugo+rx /bin/dojeb
