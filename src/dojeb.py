@@ -38,7 +38,7 @@ Pass a .jeb file to install''')
         # huge success
         if os.path.exists('wyjeb'):
             os.chmod('wyjeb', 500)
-            shutil.copy('wyjeb', '/etc/pojeb/wyjeb.d/')
+            shutil.copy('wyjeb', os.path.join('/etc/pojeb/wyjeb.d/', pkname))
             print(u"Installed all right :-D")
         else:
             print(u"Installed OK, but you can't uninstall it ヽ(´ー｀)ノ")
