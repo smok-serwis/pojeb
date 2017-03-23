@@ -45,9 +45,9 @@ Pass a .jeb file to install''')
             shutil.copy('wyjeb', os.path.join('/etc/pojeb/wyjeb.d/', pkname))
             print(u"Installed all right :-D")
         else:
-            print(u"Installed OK, but you can't uninstall it ヽ(´ー｀)ノ")
+            print(u"Installed OK, but you can't uninstall it ヽ(´ー｀)ノ".encode('utf8'))
     else:
-        print(u"Install script exited with code %s (╯°□°）╯︵ ┻━┻" % (rc, ))
+        print((u"Install script exited with code %s (╯°□°）╯︵ ┻━┻" % (rc, )).encode('utf8'))
 
     # fucking wipe the tempdir. It's gonna be awesome
     os.chdir(cur_wd)
