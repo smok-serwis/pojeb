@@ -5,8 +5,8 @@ sudo cp src/przyjeb.sh /usr/bin/przyjeb
 sudo cp src/wyjeb.py /bin/wyjeb
 sudo cp src/dojeb.py /bin/dojeb
 
-sudo mkdir /etc/pojeb
-sudo mkdir /etc/pojeb/wyjeb.d
+sudo mkdir -p /etc/pojeb
+sudo mkdir -p /etc/pojeb/wyjeb.d
 
 sudo chmod ugo+rx /usr/bin/zajeb
 sudo chmod ugo+rx /usr/bin/przyjeb

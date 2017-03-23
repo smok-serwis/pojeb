@@ -47,6 +47,8 @@ then the name of the package is **fuck-you**.
 
 `wget -O - https://github.com/smok-serwis/pojeb/raw/master/jebac-to | sudo bash`
 
+Calling the one-liner again will simply update your _pojeb_.
+
 ### The absolutely worst way
 
 Checkout the repo/unzip the zip with pojeb. Call `./install.sh` as root.
