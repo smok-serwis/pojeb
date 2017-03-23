@@ -15,9 +15,14 @@ import zipfile
 
 
 if __name__ == '__main__':
+    if os.geteuid() != 0:
+        print(u'RTFM: Run me as root')
+        sys.exit(1)
+
     if len(sys.argv[1]) < 1:
         print('''RTFM: https://github.com/smok-serwis/pojeb
 Pass a .jeb file to install''')
+        sys.exit(1)
 
     # what is the package named?
     pkname = os.path.splitext(os.path.split(sys.argv[1])[1])[0]
@@ -37,7 +42,6 @@ Pass a .jeb file to install''')
     if rc == 0:
         # huge success
         if os.path.exists('wyjeb'):
-            os.chmod('wyjeb', 500)
             shutil.copy('wyjeb', os.path.join('/etc/pojeb/wyjeb.d/', pkname))
             print(u"Installed all right :-D")
         else:
