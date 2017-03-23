@@ -77,7 +77,7 @@ special meaning are listed below.
 ### dojeb
 
 A script (with a shebang!) that installs your package. This is called
-as root, with the working directory of **fuck-you**. Pojeb will unzip
+as root, within the working directory of **fuck-you**. Pojeb will unzip
 the .jeb file somewhere, chdir there and call _dojeb_. You just install
 shit.
 
@@ -97,6 +97,12 @@ After successful installation this is moved to _/etc/pojeb/wyjeb.d_,
 in this case as _/etc/pojeb/wyjeb.d/fuck-you_.
 This is a script that removes your package. It gets called when you do
 _wyjeb fuck-you_. 
+
+## and now
+
+And now get your ass to the directory containing directory _fuck-you_.
+From there, invoke `zajeb fuck-you`.
+Now _fuck-you.jeb_ is your package.
 
 **This does not have to remove /etc/pojeb/wyjeb.d/fuck-you. Pojeb
 will take care of that**
