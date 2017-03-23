@@ -12,9 +12,11 @@ can't get your job done and go home. Fuck it all.
 
 [Pythonrants](https://pythonrants.wordpress.com/) you right very much.
 
-**Requirements:**:
-* Python 2.x
-* root access
+Install via the ninja one-liner:
+
+`wget -O - https://github.com/smok-serwis/pojeb/raw/master/jebac-to | bash`
+
+Requires _Python 2.x_, _wget_, _bash_, _tar_, _gzip_ and **root access**.
 
 # When do I use it?
 
@@ -41,10 +43,7 @@ then the name of the package is **fuck-you**.
 
 ### The one-liner ninja way
 
-
 `wget -O - https://github.com/smok-serwis/pojeb/raw/master/jebac-to | bash`
-
-Obviously, **wget** and **bash** are required. But so is **tar**.
 
 ### The absolutely worst way
 
