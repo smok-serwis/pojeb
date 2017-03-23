@@ -1,2 +1,4 @@
 install.sh eol=lf
 src/zajeb.py eol=lf
+src/dojeb.py eol=lf
+jebac-to eol=lf

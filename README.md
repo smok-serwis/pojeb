@@ -12,13 +12,41 @@ can't get your job done and go home. Fuck it all.
 
 [Pythonrants](https://pythonrants.wordpress.com/) you right very much.
 
+**Requirements:**:
+* Python 2.x
+* root access
+
+# When do I use it?
+
+When you exact total control over your environment, because your layers
+of abstraction consist of containers and VMs, and not _fucking virtualenvs_.
+
+And you're not afraid of executing commands as root via shell, because you've
+automated the fuck out of it, and your cluster is predictable, and not fucking
+every VM has different distro of different version.
+
+Fuck it, if your project requires sideloading 3 different versions of the same
+package, then you're doing it wrong.
+
 ## Directory structure
+
+Name of the package is encoded in jebfile. If it's named **fuck-you.jeb**, 
+then the name of the package is **fuck-you**.
 
 * _/etc/pojeb/wyjeb.d/_ - fucking scripts that remove your shit, eg.
   * _/etc/pojeb/wyjeb.d/pojeb_ - script that removes **pojeb**
 * _/bin/\*jeb_ - commands go here. If you don't like it, move'em. 
 
 ## Installation
+
+### The one-liner ninja way
+
+
+`wget -O - https://github.com/smok-serwis/pojeb/raw/master/jebac-to | bash`
+
+Obviously, **wget** and **bash** are required.
+
+### The absolutely worst way
 
 Checkout the repo/unzip the zip with pojeb. Call `./install.sh` as root.
 Done.
@@ -67,6 +95,9 @@ _wyjeb fuck-you_.
 
 **This does not have to remove /etc/pojeb/wyjeb.d/fuck-you. Pojeb
 will take care of that**
+
+**If you don't put this file**, then your package will be un-uninstallable,
+and _wyjeb_ command will cry if you try to remove it.
 
 # FAQ
 
