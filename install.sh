@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 cp src/zajeb.py /bin/zajeb
-cp src/przyjeb.py /bin/przyjeb
+cp src/przyjeb.sh /bin/przyjeb
 cp src/wyjeb.py /bin/wyjeb
 cp src/dojeb.py /bin/dojeb
 

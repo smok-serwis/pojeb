@@ -39,14 +39,15 @@ Pass a .jeb file to install''')
         if os.path.exists('wyjeb'):
             os.chmod('wyjeb', 500)
             shutil.copy('wyjeb', '/etc/pojeb/wyjeb.d/')
-            print("Installed all right\n")
+            print(u"Installed all right :-D")
         else:
-            print("Installed all right, but you will NOT be able to uninstall this package.\n")
+            print(u"Installed OK, but you can't uninstall it ヽ(´ー｀)ノ")
     else:
-        print("Package's dojeb returned RC %s.\nInstallation has failed.\n")
+        print(u"Install script exited with RC %s (╯°□°）╯︵ ┻━┻")
 
     # fucking wipe the tempdir. It's gonna be awesome
     os.chdir(cur_wd)
-    #shutil.rmtree(temp_d, ignore_errors=True)
+    shutil.rmtree(temp_d, ignore_errors=True)
 
     # thank you for being an awesome user of pojeb
+    sys.exit(rc)

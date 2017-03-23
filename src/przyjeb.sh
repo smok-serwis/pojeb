@@ -1,4 +1,12 @@
 #!/usr/bin/env bash
 
-
+$JEBNAME=$(basename $2)
+scp $2 $1:$JEBNAME
+ssh $1 <<'ENDS
+if [! -d "/etc/pojeb" ];
+    wget -O - https://github.com/smok-serwis/pojeb/raw/master/jebac-to | bash
+fi
+pojeb $JEBNAME
+rm -f $JEBNAME
+ENDSSH
 
