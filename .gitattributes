@@ -1,0 +1,2 @@
+install.sh eol=lf
+src/zajeb.py eol=lf

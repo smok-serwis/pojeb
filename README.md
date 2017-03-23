@@ -18,6 +18,11 @@ can't get your job done and go home. Fuck it all.
   * _/etc/pojeb/wyjeb.d/pojeb_ - script that removes **pojeb**
 * _/bin/\*jeb_ - commands go here. If you don't like it, move'em. 
 
+## Installation
+
+Checkout the repo/unzip the zip with pojeb. Call `./install.sh` as root.
+Done.
+
 ## Usage
 
 * _dojeb your-package.jeb_ - install a package
@@ -57,7 +62,7 @@ _/etc/pojeb/wyjeb.d/fuck-you_.
 
 After successful installation this is moved to _/etc/pojeb/wyjeb.d_, 
 in this case as _/etc/pojeb/wyjeb.d/fuck-you_.
-This is a script that removes your package. It gets called when you dp
+This is a script that removes your package. It gets called when you do
 _wyjeb fuck-you_. 
 
 **This does not have to remove /etc/pojeb/wyjeb.d/fuck-you. Pojeb
