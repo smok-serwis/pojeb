@@ -47,7 +47,7 @@ Pass a .jeb file to install''')
         else:
             print(u"Installed OK, but you can't uninstall it ヽ(´ー｀)ノ")
     else:
-        print(u"Install script exited with RC %s (╯°□°）╯︵ ┻━┻")
+        print(u"Install script exited with code %s (╯°□°）╯︵ ┻━┻" % (rc, ))
 
     # fucking wipe the tempdir. It's gonna be awesome
     os.chdir(cur_wd)

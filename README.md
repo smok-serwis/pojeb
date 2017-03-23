@@ -102,6 +102,9 @@ will take care of that**
 **If you don't put this file**, then your package will be un-uninstallable,
 and _wyjeb_ command will cry if you try to remove it.
 
+**Note: ** if package's _wyjeb_ script returns a non-zero error code, uninstallation will be treated
+as successful nevertheless, and the command will return 0.
+
 # FAQ
 
 Q: What should install/uninstall scripts be written in?
