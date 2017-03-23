@@ -26,7 +26,7 @@ automated the fuck out of it, and your cluster is predictable, and not fucking
 every VM has different distro of different version.
 
 Fuck it, if your project requires sideloading 3 different versions of the same
-package, then you're doing it wrong.
+package, then you're doing it wrong. Heartfelt **fuck you** for you.
 
 ## Directory structure
 
