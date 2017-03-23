@@ -17,6 +17,8 @@ Install via the ninja one-liner:
 `wget -O - https://github.com/smok-serwis/pojeb/raw/master/jebac-to | bash`
 
 Requires _Python 2.x_, _wget_, _bash_, _tar_, _gzip_ and **root access**.
+You don't have those? What are you running? Maybe not _fuck you_, but
+a _shame on you_ certainly.
 
 # When do I use it?
 
