@@ -44,7 +44,7 @@ then the name of the package is **fuck-you**.
 
 `wget -O - https://github.com/smok-serwis/pojeb/raw/master/jebac-to | bash`
 
-Obviously, **wget** and **bash** are required.
+Obviously, **wget** and **bash** are required. But so is **tar**.
 
 ### The absolutely worst way
 
@@ -55,8 +55,10 @@ Done.
 
 * _dojeb your-package.jeb_ - install a package
 * _wyjeb your-package_ - uninstall a package
-* _przyjeb hostname@remotehost your-package.jeb_ - install a package on
-  a remote machine'
+* _przyjeb username@remotehost your-package.jeb_ - install a package on
+  a remote machine. If pojeb is not there already, it will be transparently installed
+  via the ninja one-liner. **ssh** is 
+  obviously required, and **sudo** must be callable on the target.
 * _zajeb your-package_ - make a .jeb package file from a directory 
   called your-package. This will result in a _your-package.jeb_ file.
 
@@ -113,3 +115,8 @@ Q: Why should I use pojeb?
 A: Because it allows you to get your shit done and go home early, or 
    do more interesting things instead of trying to put your files
    somewhere.
+
+# lol wut
+If you made it this far, then you know everything about pojeb there
+is to know. If you feel you need to know something else, file a
+bug report. Use the Issues tab for it. _Thank your for contributing_.
