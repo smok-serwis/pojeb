@@ -3,10 +3,9 @@
 JEBNAME=$(basename "$2")
 scp "$2" "$1:$JEBNAME"
 ssh "$1" << "ENDSSH"
-if [! -d "/etc/pojeb" ]; then
+if [ ! -d "/etc/pojeb" ]; then
     wget -O - https://github.com/smok-serwis/pojeb/raw/master/jebac-to | sudo bash
 fi
 sudo pojeb $JEBNAME
 rm -f $JEBNAME
 ENDSSH
-
