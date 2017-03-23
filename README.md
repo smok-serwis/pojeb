@@ -66,7 +66,7 @@ Done.
   called your-package. This will result in a _your-package.jeb_ file.
 
   
-## How do I make pojeb packages
+# How do I make pojeb packages
 
 Let's say your are making a package called **fuck-you**. You should
 make a directory called _fuck-you_. 
