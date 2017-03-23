@@ -37,7 +37,7 @@ Pass a .jeb file to install''')
     # Fucking right, execute install
     os.chdir(temp_d)
     os.chmod('dojeb', 500)
-    rc = os.system('./dojeb')
+    rc = os.system('./dojeb '+' '.join(sys.argv[2:]))   # run dojeb, pass extra parameters
 
     if rc == 0:
         # huge success

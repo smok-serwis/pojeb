@@ -6,6 +6,6 @@ ssh "$1" <<ENDSSH
 if [ ! -d "/etc/pojeb" ]; then
     wget -O - https://github.com/smok-serwis/pojeb/raw/master/jebac-to | sudo bash
 fi
-sudo dojeb $JEBNAME
+sudo dojeb $JEBNAME ${@:3}
 rm -f $JEBNAME
 ENDSSH

@@ -65,6 +65,7 @@ Done.
 * _zajeb your-package_ - make a .jeb package file from a directory 
   called your-package. This will result in a _your-package.jeb_ file.
 
+If you add any extra arguments after dojeb or przyjeb, they will be passed to setup script.
   
 # How do I make pojeb packages
 
@@ -88,6 +89,7 @@ This should check if you are updating your own package. A good
 way to check it is checking for existence of 
 _/etc/pojeb/wyjeb.d/fuck-you_. 
 
+This also receives any extra arguments for _dojeb_ or _przyjeb_.
 
 **This does not have to copy wyjeb. Pojeb will take care of that**
 
