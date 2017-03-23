@@ -14,9 +14,9 @@ can't get your job done and go home. Fuck it all.
 
 Install via the ninja one-liner:
 
-`wget -O - https://github.com/smok-serwis/pojeb/raw/master/jebac-to | bash`
+`wget -O - https://github.com/smok-serwis/pojeb/raw/master/jebac-to | sudo bash`
 
-Requires _Python 2.x_, _wget_, _bash_, _tar_, _gzip_ and **root access**.
+Requires _Python 2.x_, _sudo_, _wget_, _bash_, _tar_, _gzip_ and **root access**.
 You don't have those? What are you running? Maybe not _fuck you_, but
 a _shame on you_ certainly.
 
@@ -45,7 +45,7 @@ then the name of the package is **fuck-you**.
 
 ### The one-liner ninja way
 
-`wget -O - https://github.com/smok-serwis/pojeb/raw/master/jebac-to | bash`
+`wget -O - https://github.com/smok-serwis/pojeb/raw/master/jebac-to | sudo bash`
 
 ### The absolutely worst way
 

@@ -3,6 +3,6 @@
 wget https://github.com/smok-serwis/pojeb/archive/master.tar.gz
 tar xvf master.tar.gz
 cd pojeb-master
-source install.sh
+sudo bash install.sh
 cd ..
 rm -rf master.tar.gz pojeb-master
