@@ -57,6 +57,7 @@ Done.
 ## Usage
 
 * _sudo dojeb your-package.jeb_ - install a package
+* _sudo dojeb https://example.com/your-package.jeb_ - download a package and install it. Requires wget.
 * _sudo wyjeb your-package_ - uninstall a package
 * _przyjeb username@remotehost your-package.jeb_ - install a package on
   a remote machine. If pojeb is not there already, it will be transparently installed
